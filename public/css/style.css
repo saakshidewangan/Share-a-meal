@@ -1,0 +1,362 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 100px 0;
+    position: relative;
+}
+
+.hero-section h1 {
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.hero-section .lead {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+}
+
+/* Features Section */
+.features-section {
+    background-color: #f8f9fa;
+    padding: 60px 0;
+}
+
+.features-section h2 {
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+.icon-container {
+    background-color: #f0f8f0;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+}
+
+.feature-card {
+    padding: 2rem;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    margin-bottom: 2rem;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+.feature-card i {
+    color: #0d6efd;
+}
+
+.feature-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.feature-card p {
+    color: #666;
+    margin-bottom: 0;
+}
+
+/* Auth Modal */
+.modal-content {
+    border-radius: 15px;
+    border: none;
+}
+
+.modal-header {
+    border-bottom: 1px solid #eee;
+    padding: 1.5rem;
+}
+
+.modal-body {
+    padding: 1.5rem;
+}
+
+.form-control, .form-select {
+    border-radius: 8px;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+}
+
+.btn-primary {
+    padding: 0.75rem 1.5rem;
+    border-radius: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    background-color: #4CAF50;
+    border-color: #4CAF50;
+}
+
+.btn-primary:hover {
+    background-color: #3e8e41;
+    border-color: #3e8e41;
+}
+
+.btn-success {
+    background-color: #4CAF50;
+    border-color: #4CAF50;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.btn-success:hover {
+    background-color: #3e8e41;
+    border-color: #3e8e41;
+}
+
+/* Navbar */
+.navbar {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #fff !important;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #4CAF50 !important;
+}
+
+.navbar-brand i {
+    color: #4CAF50;
+}
+
+/* Founders Section */
+.founders-section {
+    background-color: #f8f9fa;
+    padding: 60px 0;
+}
+
+.founders-section h2 {
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+.founder-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    padding: 30px 20px;
+    margin-bottom: 30px;
+    transition: transform 0.3s ease;
+}
+
+.founder-card:hover {
+    transform: translateY(-5px);
+}
+
+.founder-img-container {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 20px;
+    overflow: hidden;
+}
+
+.founder-img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.founder-title {
+    color: #4CAF50;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.founder-desc {
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+}
+
+.founder-social a {
+    color: #4CAF50;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.founder-social a:hover {
+    color: #3e8e41;
+}
+
+/* Testimonials Section */
+.testimonials-section {
+    padding: 60px 0;
+}
+
+.testimonials-section h2 {
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+.testimonial-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.testimonial-text {
+    font-style: italic;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.testimonial-author {
+    color: #4CAF50;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+/* About Section */
+.about-section {
+    padding: 60px 0;
+    background-color: #fff;
+}
+
+.about-section h2 {
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+.about-section h3 {
+    color: #4CAF50;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.about-section p {
+    color: #666;
+    margin-bottom: 15px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 60px 0;
+    }
+
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+
+    .feature-card, .founder-card, .testimonial-card {
+        margin-bottom: 1.5rem;
+    }
+    
+    .founder-img-container {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+/* Footer Section */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 60px 0 30px;
+}
+
+.footer h5 {
+    color: #fff;
+    font-weight: 600;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: #ddd;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #4CAF50;
+}
+
+.footer-social a {
+    color: #fff;
+    font-size: 1.5rem;
+    margin-right: 15px;
+    transition: color 0.3s ease;
+}
+
+.footer-social a:hover {
+    color: #4CAF50;
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 20px;
+    margin-top: 40px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #aaa;
+}
+
+@media (max-width: 768px) {
+    .footer {
+        text-align: center;
+    }
+    
+    .footer-social {
+        margin-top: 20px;
+    }
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero-section, .feature-card {
+    animation: fadeIn 1s ease-out;
+}
