@@ -36,17 +36,20 @@ app.use('/api/matching', matchingRoutes);
 const userSockets = new Map();
 
 // MongoDB Connection
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/share_a_plate')
+mongoose.connect(process.env.MONGODB_URI , {
+  useNewUrlParser: true,
+  useUnifiedTopology: true
+})
     .then(() => {
         console.log('\n=== MongoDB Connection ===');
         console.log('Connected to MongoDB successfully');
-        console.log('Database:', process.env.MONGODB_URI || 'mongodb://localhost:27017/share_a_plate');
+        console.log('Database:', process.env.MONGODB_URI);
         console.log('========================\n');
     })
     .catch(err => {
         console.error('\n=== MongoDB Connection Error ===');
         console.error('Error connecting to MongoDB:', err);
-        console.error('Connection string:', process.env.MONGODB_URI || 'mongodb://localhost:27017/share_a_plate');
+        console.error('Connection string:', process.env.MONGODB_URI);
         console.error('===========================\n');
     });
 
